@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lam Duc Thinh — Backend-oriented Fullstack Developer specializing in Node.js, NestJS, TypeScript, PostgreSQL, Redis, Concurrency Locks, and Database Optimization.">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Lam Duc Thinh — Backend & Fullstack Developer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231e382b'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='sans-serif' font-size='30' font-weight='bold' fill='%23d6f28b'%3Elt.%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top Sticky Header -->
+  <header class="header">
+    <a class="wordmark" href="#" aria-label="Lam Duc Thinh home">thinh<span>.dev</span></a>
+    
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation menu">
+      <span>Menu</span>
+      <span class="toggle-icon">+</span>
+    </button>
+
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#projects">Projects & Benchmarks</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      <a href="assets/LamDucThinh_CV.pdf" download class="nav-cv-btn">CV (PDF) ↓</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          <span>BACKEND-ORIENTED FULLSTACK DEVELOPER · HO CHI MINH CITY</span>
+        </div>
+
+        <h1>Architecting resilient APIs & <span class="serif">optimized systems.</span></h1>
+
+        <p class="hero-intro">
+          Hi, I’m <strong>Lam Duc Thinh</strong>. Software engineer with <strong>1 year of combined internship and professional experience</strong> building high-throughput RESTful APIs and full-stack applications with <strong>Node.js, NestJS, TypeScript, PostgreSQL, and Redis</strong>.
+        </p>
+
+        <p class="hero-subintro">
+          Focused on distributed locking, database query tuning (reducing latency by up to <strong>95.15%</strong> on 100K datasets), transactional consistency, and AI-assisted workflows using <strong>Codex</strong> and <strong>OpenCode</strong>.
+        </p>
+
+        <!-- Key Metrics Strip -->
+        <div class="hero-metrics-grid">
+          <div class="metric-box">
+            <span class="metric-number">-95.15%</span>
+            <span class="metric-label">Deep-Pagination Latency on 100K Benchmark</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">1 Year</span>
+            <span class="metric-label">Combined Professional & Internship Exp</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">Distributed</span>
+            <span class="metric-label">Redis Mutex · gRPC · Kafka Event Queues</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore Projects & Benchmarks <span aria-hidden="true">↗</span></a>
+          <a class="button outline" href="assets/LamDucThinh_CV.pdf" download>Download CV (PDF) <span aria-hidden="true">↓</span></a>
+          <button class="button text-button copy-trigger" data-copy="thinhld.dev@gmail.com">Copy Email</button>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Real-time System Flow Diagram -->
+      <div class="hero-art" aria-label="System architecture interactive illustration">
+        <div class="art-top">
+          <span><i class="status-dot"></i> HIGH-CONCURRENCY ARCHITECTURE</span>
+          <span>BENCHMARKED · PRODUCTION READY</span>
+        </div>
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="flow-line line-one"></div>
+        <div class="flow-line line-two"></div>
+
+        <div class="system-node node-api">
+          <span class="node-icon">{ }</span>
+          <div>
+            <small>ENTRY GATEWAY</small>
+            <strong>REST / WebSocket</strong>
+          </div>
+          <span class="node-light"></span>
+        </div>
+
+        <div class="system-node node-service">
+          <span class="node-icon">⌘</span>
+          <div>
+            <small>APPLICATION CORE</small>
+            <strong>NestJS + Redis Mutex</strong>
+          </div>
+          <span class="node-light active-pulse"></span>
+        </div>
+
+        <div class="system-node node-db">
+          <span class="node-icon">≡</span>
+          <div>
+            <small>OPTIMIZED PERSISTENCE</small>
+            <strong>PostgreSQL (Prisma) + Mongo</strong>
+          </div>
+          <span class="node-light"></span>
+        </div>
+
+        <div class="code-note">
+          <span>// 100K rows index optimization</span><br>
+          median_latency: <b>14.2ms (-95.15%)</b>
+        </div>
+
+        <div class="art-bottom">
+          <span>ACID TRANSACTIONS · ZERO DOUBLE-BOOKING</span>
+          <span aria-hidden="true">↗</span>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>From database schema indexing to concurrent payment webhooks.</span>
+        <a href="#projects">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- Everyday Stack Strip -->
+    <div class="stack-strip">
+      <div class="container">
+        <span class="strip-label">CORE TOOLKIT</span>
+        <span>Node.js</span>
+        <span>NestJS</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>Redis</span>
+        <span>Apache Kafka</span>
+        <span>gRPC</span>
+        <span>Docker</span>
+        <span>ReactJS</span>
+        <span>Codex / OpenCode</span>
+      </div>
+    </div>
+
+    <!-- Projects Section (Full-width, prominently separated) -->
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / SELECTED WORK & BENCHMARKS</p>
+          <h2>Engineered for scale.<br><span class="serif">Validated with data.</span></h2>
+        </div>
+        <p>Production-style systems solving concurrent double-booking, multi-protocol microservices, and real-time WebSocket messaging.</p>
+      </div>
+
+      <!-- ================== PROJECT 01: TICKET BOOKING ================== -->
+      <article class="project featured">
+        <div class="project-visual booking-visual" aria-label="Ticket booking interactive seat reservation visual">
+          <div class="visual-label">
+            <span>TICKET BOOKING</span>
+            <span class="badge-tag">FLAGSHIP SOLO PROJECT</span>
+          </div>
+
+          <div class="ticket-window">
+            <div class="ticket-heading">
+              <span>Concurrency-Safe Seat Locking</span>
+              <small>REDIS TTL MUTEX + POSTGRESQL TRANSACTIONS</small>
+            </div>
+            <div class="cinema-screen">CINEMA SCREEN</div>
+            <div class="seat-map" aria-hidden="true"></div>
+            <div class="seat-legend">
+              <span><i></i> Available</span>
+              <span><i class="selected-box"></i> Selected</span>
+              <span><i class="reserved-box"></i> Locked (TTL)</span>
+            </div>
+            <div class="ticket-total">
+              <span>SEPAY QR INSTANT WEBHOOK</span>
+              <strong>Zero double-booking under race conditions ↗</strong>
+            </div>
+          </div>
+          <span class="visual-caption">ISOLATED TRANSACTIONS & WEBHOOK RECONCILIATION</span>
+        </div>
+
+        <div class="project-copy">
+          <div class="project-meta">
+            <span>BACKEND-ORIENTED FULLSTACK DEVELOPER · SOLO PROJECT</span>
+            <span>2026 — PRESENT</span>
+          </div>
+
+          <h3>Ticket Booking Platform</h3>
+          <p>
+            A high-traffic movie ticket reservation platform designed to solve the classic distributed race condition: ensuring zero double-booking under simultaneous seat checkout while processing real-time bank QR payment webhooks.
+          </p>
+
+          <!-- Verified Benchmark Data Box from CV -->
+          <div class="benchmark-card">
+            <div class="benchmark-header">
+              <span class="bench-icon">⚡</span>
+              <strong>100K Synthetic Bookings Benchmark Results</strong>
+            </div>
+            <div class="benchmark-grid">
+              <div class="bench-stat">
+                <span class="stat-value">-95.15%</span>
+                <span class="stat-desc">Deep-pagination median latency (cursor-based pagination & composite indexes)</span>
+              </div>
+              <div class="bench-stat">
+                <span class="stat-value">-95.90%</span>
+                <span class="stat-desc">Seat price update queries (grouped updates & batch operations)</span>
+              </div>
+              <div class="bench-stat">
+                <span class="stat-value">-79.17%</span>
+                <span class="stat-desc">Bulk scheduling database operations reduction</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="feature-list">
+            <li><strong>Distributed Locking:</strong> Implemented seat reservation with Redis TTL mutex locks and atomic PostgreSQL transactions wrapped in Prisma ($transaction) to prevent race condition collisions.</li>
+            <li><strong>Instant QR Reconciliation:</strong> Integrated SePay payment gateway with signature-verified webhooks, automated ticket state transitions, and booking expiration background workers.</li>
+            <li><strong>Security & API Specs:</strong> Built role-based access control (RBAC), JWT authentication, TMDB movie catalog ingestion, and comprehensive Swagger/OpenAPI documentation.</li>
+          </ul>
+
+          <div class="tags">
+            <span>NestJS</span>
+            <span>React / Vite</span>
+            <span>TypeScript</span>
+            <span>PostgreSQL</span>
+            <span>Prisma</span>
+            <span>Redis</span>
+            <span>JWT</span>
+            <span>SePay QR</span>
+            <span>Docker</span>
+            <span>Swagger</span>
+          </div>
+
+          <div class="project-links">
+            <a class="project-link primary-link" href="https://www.cine-go.tech" target="_blank" rel="noopener noreferrer">Live Demo (CineGo) <span>↗</span></a>
+            <a class="project-link" href="https://github.com/ThinhLam2404/ticket-booking" target="_blank" rel="noopener noreferrer">Explore Repository <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================== PROJECT 02: EINVOICE ================== -->
+      <article class="project featured">
+        <div class="project-visual invoice-visual" aria-label="Einvoice microservices architecture diagram">
+          <div class="visual-label">
+            <span>EINVOICE</span>
+            <span class="badge-tag">MICROSERVICES ARCHITECTURE</span>
+          </div>
+
+          <div class="invoice-diagram">
+            <div class="service-pill">API Gateway (NestJS)</div>
+            <div class="diagram-branch"></div>
+            <div class="service-row">
+              <span>Auth Service<br><small>gRPC Contract</small></span>
+              <span>Invoice Core<br><small>TCP Messaging</small></span>
+              <span>Event Stream<br><small>Apache Kafka</small></span>
+            </div>
+            <div class="invoice-paper">
+              <span>INVOICE <b>#INV-2026-001</b></span>
+              <i></i><i></i><i></i>
+              <div>Offloaded Puppeteer PDF Rendering & Stripe Receipt Dispatch</div>
+            </div>
+          </div>
+          <span class="visual-caption">NX MONOREPO / MULTI-PROTOCOL INTER-SERVICE COMMUNICATION</span>
+        </div>
+
+        <div class="project-copy">
+          <div class="project-meta">
+            <span>BACKEND FOCUS · SOLO PROJECT</span>
+            <span>NOV 2025 — JAN 2026</span>
+          </div>
+
+          <h3>Einvoice Microservice Engine</h3>
+          <p>
+            A scalable, high-availability invoice automation ecosystem architected as a distributed microservice suite within an <strong>Nx Monorepo</strong>. Engineered to decouple compute-heavy PDF generation and payment webhooks from core transactions.
+          </p>
+
+          <ul class="feature-list">
+            <li><strong>Multi-Protocol Mesh:</strong> Orchestrated inter-service communication using binary <strong>gRPC</strong> for low-latency authorization, <strong>TCP</strong> for core invoice business logic, and <strong>Apache Kafka</strong> for asynchronous event streaming.</li>
+            <li><strong>Authentication & Payments:</strong> Centralized identity management via Keycloak OAuth2 delegation, integrated Stripe payment gateway for automated customer checkout.</li>
+            <li><strong>Worker Offloading:</strong> Puppeteer headless Chrome instances for high-fidelity PDF rendering and Cloudinary CDN for media asset storage.</li>
+          </ul>
+
+          <div class="tags">
+            <span>NestJS</span>
+            <span>Nx Monorepo</span>
+            <span>Microservices (TCP/gRPC)</span>
+            <span>Apache Kafka</span>
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>Redis</span>
+            <span>Keycloak</span>
+            <span>Puppeteer</span>
+            <span>Stripe</span>
+            <span>Cloudinary</span>
+          </div>
+
+          <div class="project-links">
+            <a class="project-link primary-link" href="https://einvoice-fe.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo <span>↗</span></a>
+            <a class="project-link" href="https://github.com/ThinhLam2404/envoice" target="_blank" rel="noopener noreferrer">Backend Repository <span>↗</span></a>
+            <a class="project-link" href="https://github.com/ThinhLam2404/einvoice-fe" target="_blank" rel="noopener noreferrer">Frontend Repository <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================== PROJECT 03: TEXTENGER ================== -->
+      <article class="project featured">
+        <div class="project-visual chat-visual" aria-label="Textenger real-time chat preview">
+          <div class="visual-label">
+            <span>TEXTENGER</span>
+            <span class="badge-tag">REAL-TIME SOCKET.IO ENGINE</span>
+          </div>
+
+          <div class="chat-window">
+            <div class="chat-top">
+              <span class="chat-avatar">T</span>
+              <div>
+                Textenger Gateway
+                <small><i class="status-dot"></i> Real-time WebSocket connection active</small>
+              </div>
+              <span class="window-options">•••</span>
+            </div>
+            <div class="chat-bubble">
+              Zero dropped messages at peak concurrency.<small>10:24</small>
+            </div>
+            <div class="chat-bubble outgoing">
+              Backed by Mongoose schemas and Cache-Manager.<small>10:24 ✓✓</small>
+            </div>
+            <div class="typing"><i></i><i></i><i></i></div>
+            <div class="chat-input">Type a test payload… <span>↑</span></div>
+          </div>
+          <span class="visual-caption">SUB-SECOND MESSAGE DISPATCH & PRESENCE TRACKING</span>
+        </div>
+
+        <div class="project-copy">
+          <div class="project-meta">
+            <span>BACKEND FOCUS · SOLO PROJECT</span>
+            <span>JAN 2026 — FEB 2026</span>
+          </div>
+
+          <h3>Textenger Real-Time Chat Infrastructure</h3>
+          <p>
+            A modular real-time messaging system built on <strong>NestJS WebSockets (Socket.IO)</strong>. Engineered for high-throughput packet delivery, presence tracking (online/offline heartbeat), and low-latency interaction.
+          </p>
+
+          <ul class="feature-list">
+            <li><strong>High-Concurrency Event Loop:</strong> Optimized WebSocket gateway architecture for room-based broadcasting, message delivery acknowledgments, and live typing indicators.</li>
+            <li><strong>Cache-Assisted Storage:</strong> Designed flexible conversation schemas using Mongoose and leveraged Cache-Manager in-memory caching to substantially minimize database query pressure.</li>
+            <li><strong>Multi-Layered Auth:</strong> Combined Google OAuth2 social login with signed JWT verification on socket handshake connections.</li>
+          </ul>
+
+          <div class="tags">
+            <span>NestJS</span>
+            <span>TypeScript</span>
+            <span>Socket.IO</span>
+            <span>MongoDB (Mongoose)</span>
+            <span>Cache-Manager</span>
+            <span>Google OAuth</span>
+            <span>JWT</span>
+            <span>Cloudinary</span>
+            <span>Nodemailer</span>
+          </div>
+
+          <div class="project-links">
+            <a class="project-link primary-link" href="https://www.textenger.me" target="_blank" rel="noopener noreferrer">Live Demo <span>↗</span></a>
+            <a class="project-link" href="https://github.com/ThinhLam2404/textenger-chat" target="_blank" rel="noopener noreferrer">Backend Repository <span>↗</span></a>
+            <a class="project-link" href="https://github.com/ThinhLam2404/textenger-chat-fe" target="_blank" rel="noopener noreferrer">Frontend Repository <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="section container" id="experience">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / PROFESSIONAL JOURNEY</p>
+          <h2>Experience & <span class="serif">engineering practice.</span></h2>
+        </div>
+        <p>Real-world delivery, Agile sprints, backend development, and AI-assisted workflows.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- CT Group: Fullstack Developer (April 2026 - Oct 2026) -->
+        <article class="experience">
+          <div class="experience-date">
+            APRIL 2026 — OCT 2026
+            <span class="role-badge">ENTERPRISE EXPERIENCE</span>
+          </div>
+
+          <div class="experience-body">
+            <div class="experience-header">
+              <h3>CT Group</h3>
+              <p class="role">Fullstack Developer</p>
+            </div>
+
+            <ul class="experience-bullets">
+              <li>
+                <strong>Development:</strong> Contributed to developing and maintaining backend features using <strong>Node.js, NestJS, TypeScript, and RESTful APIs</strong>, including request validation pipes, database operations, authentication, structured error handling, and debugging. Supported frontend tasks using <strong>ReactJS</strong>, including API integration, reusable components, and loading, error, and form states.
+              </li>
+              <li>
+                <strong>AI-Assisted Development:</strong> Used approved AI tools such as <strong>Codex</strong> and <strong>OpenCode</strong> to research business domains, understand internal documentation and existing codebases, break down tasks, investigate bugs, refactor code, and prepare test cases. Manually reviewed and validated AI-generated code before integration.
+              </li>
+              <li>
+                <strong>Collaboration & Best Practices:</strong> Worked with Git-based workflows, code reviews, debugging sessions, task discussions, and Agile/Scrum practices under senior developer guidance.
+              </li>
+            </ul>
+
+            <div class="tags">
+              <span>Node.js</span>
+              <span>NestJS</span>
+              <span>TypeScript</span>
+              <span>ReactJS</span>
+              <span>RESTful API</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>Redis</span>
+              <span>Git</span>
+              <span>Docker</span>
+              <span>Codex</span>
+              <span>OpenCode</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- UTA Solution: Internship (Aug 2024 - Dec 2024) -->
+        <article class="experience">
+          <div class="experience-date">
+            AUG 2024 — DEC 2024
+            <span class="role-badge neutral-badge">INTERNSHIP</span>
+          </div>
+
+          <div class="experience-body">
+            <div class="experience-header">
+              <h3>UTA Solution</h3>
+              <p class="role">Fullstack Developer (Internship)</p>
+            </div>
+
+            <ul class="experience-bullets">
+              <li>
+                <strong>Development:</strong> Developed and maintained features for both frontend and backend using ReactJS, Node.js, and ExpressJS.
+              </li>
+              <li>
+                <strong>Workflow & Agile:</strong> Applied Agile/Scrum methodology in a real-world team environment with sprint deliverables and backlog grooming.
+              </li>
+              <li>
+                <strong>Collaboration:</strong> Managed source code, resolved merge conflicts, and collaborated through Git version control.
+              </li>
+            </ul>
+
+            <div class="tags">
+              <span>ReactJS</span>
+              <span>Node.js</span>
+              <span>ExpressJS</span>
+              <span>HTML/CSS</span>
+              <span>RESTful API</span>
+              <span>Git</span>
+              <span>Agile / Scrum</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section class="about-section" id="skills">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">03 / TECHNICAL CAPABILITIES</p>
+          <h2>A solid toolkit.<br><span class="serif">Deep fundamentals.</span></h2>
+          <p>
+            I approach software development with a strong focus on clean architecture, type safety, and maintainable data modeling. Whether building high-performance REST APIs or event-driven pipelines, I ensure every layer handles failure gracefully.
+          </p>
+          <p>
+            Experienced with modern AI-assisted engineering tools (<strong>Codex, OpenCode, Cursor</strong>) to accelerate exploration, task breakdown, and test scaffolding while enforcing rigorous manual verification on every PR.
+          </p>
+
+          <!-- Education Card embedded in About -->
+          <div class="education" id="education">
+            <span class="education-icon">🎓</span>
+            <div>
+              <strong>FPT University</strong>
+              <span>Bachelor of Software Engineering</span>
+              <small>Sep 2021 — Oct 2025 · GPA: <strong>8.46 / 10.0</strong> | English: Intermediate</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-panel">
+          <h3>Skills Summary</h3>
+
+          <div class="skill-group">
+            <span class="skill-num">01</span>
+            <div>
+              <h4>Languages & Backend Core</h4>
+              <p>JavaScript (ES6+), TypeScript, SQL, Node.js, NestJS, ExpressJS, RESTful API, JWT, OAuth2</p>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-num">02</span>
+            <div>
+              <h4>Databases & Optimization</h4>
+              <p>PostgreSQL, MongoDB, SQL Server, Redis, Prisma ORM, Mongoose, Composite Indexes, Cursor Pagination</p>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-num">03</span>
+            <div>
+              <h4>Distributed & Integrations</h4>
+              <p>Socket.IO, gRPC, Apache Kafka, Stripe, Cloudinary, SePay QR Payment, Nx Monorepo</p>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-num">04</span>
+            <div>
+              <h4>Frontend & Tooling</h4>
+              <p>ReactJS, HTML/CSS, Git, GitHub, Docker, Postman, Swagger / OpenAPI</p>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-num">05</span>
+            <div>
+              <h4>AI-Assisted Development & Practices</h4>
+              <p>Codex, OpenCode, Cursor, Agile/Scrum, Unit Testing, Integration Testing, Code Review, Problem-solving</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prominent Contact Section with High-Visibility Phone & Email Cards -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO BACKEND DEVELOPER OPPORTUNITIES</p>
+
+        <div class="contact-heading">
+          <div>
+            <h2>Have something<br><span class="serif">in mind?</span></h2>
+            <p class="contact-intro">
+              I am actively seeking a <strong>Backend Developer</strong> role in Ho Chi Minh City or remote setups. Feel free to reach out directly via phone or email.
+            </p>
+          </div>
+          <a class="contact-arrow" href="tel:0969125574" aria-label="Call Lam Duc Thinh">↗</a>
+        </div>
+
+        <!-- Two Huge Contact Cards (Phone & Email) -->
+        <div class="contact-channels">
+          <!-- Direct Phone Card -->
+          <div class="channel-card channel-phone">
+            <div class="channel-top">
+              <span class="channel-badge">DIRECT PHONE & ZALO</span>
+              <button class="copy-chip" data-copy="0969125574" title="Copy phone number">Copy</button>
+            </div>
+            <a class="channel-main" href="tel:0969125574">
+              <strong>0969 125 574</strong>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <p class="channel-desc">Immediate response for recruitment calls, interview scheduling, and Zalo discussions.</p>
+          </div>
+
+          <!-- Primary Email Card -->
+          <div class="channel-card channel-email">
+            <div class="channel-top">
+              <span class="channel-badge">PRIMARY EMAIL</span>
+              <button class="copy-chip" data-copy="thinhld.dev@gmail.com" title="Copy email address">Copy</button>
+            </div>
+            <a class="channel-main" href="mailto:thinhld.dev@gmail.com">
+              <strong>thinhld.dev@gmail.com</strong>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <p class="channel-desc">Direct communication for job specifications, technical inquiries, and project offers.</p>
+          </div>
+        </div>
+
+        <!-- Meta info row -->
+        <div class="contact-meta-row">
+          <div class="contact-location">
+            <span class="location-pin">📍</span>
+            <span>Binh Thanh, Ho Chi Minh City, Viet Nam</span>
+          </div>
+
+          <div class="contact-links-group">
+            <a href="https://github.com/ThinhLam2404" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+            <a href="https://www.linkedin.com/in/duc-thinh-lam-90ba973a2/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="assets/LamDucThinh_CV.pdf" download class="contact-cv-btn">Download CV (PDF) ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="container footer">
+    <a class="wordmark" href="#">thinh<span>.dev</span></a>
+    <span>© <span id="year">2026</span> Lam Duc Thinh · Backend & Fullstack Developer</span>
+    <a href="#main" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+  <!-- Toast Notification Box -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Copied to clipboard!</span>
+  </div>
+</body>
+</html>
